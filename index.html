@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QR Code</title>
+  <title>Contact Khalifa</title>
+  <style>
+    body{
+      font-family: Arial;
+      text-align:center;
+      margin-top:100px;
+    }
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    .btn{
+      display:block;
+      width:220px;
+      margin:20px auto;
+      padding:15px;
+      text-decoration:none;
+      color:white;
+      border-radius:10px;
+      font-size:20px;
+    }
 
-<style>
+    .call{
+      background:green;
+    }
 
-body{
-    margin:0;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:#f4f4f4;
-    font-family:Arial;
-}
-
-.container{
-    background:white;
-    padding:30px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 0 15px rgba(0,0,0,0.2);
-}
-
-#qrcode{
-    margin-top:20px;
-}
-
-</style>
+    .whatsapp{
+      background:#25D366;
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+<h1>Contact Khalifa</h1>
 
-<h2>Scan This QR Code</h2>
+<a class="btn call" href="tel:+255716682845">
+📞 Call Me
+</a>
 
-<div id="qrcode"></div>
-
-</div>
-
-<script>
-
-new QRCode(document.getElementById("qrcode"), {
-    text: "contact.html",
-    width: 220,
-    height: 220
-});
-
-</script>
+<a class="btn whatsapp"
+href="https://wa.me/255716682845">
+💬 WhatsApp Me
+</a>
 
 </body>
 </html>
